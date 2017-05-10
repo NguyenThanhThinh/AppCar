@@ -1,0 +1,38 @@
+﻿using AppCar.Entities.EntityModel;
+using System;
+using System.Collections.Generic;
+using System.Data.Entity;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AppCar.Data
+{
+    public class AppCarDbContext : DbContext
+    {
+        public AppCarDbContext() : base("AppCarPetProject")
+        {
+
+        }
+        public DbSet<Car> Cars { get; set; }
+
+        public DbSet<Part> Parts { get; set; }
+
+        public DbSet<Supplier> Suppliers { get; set; }
+
+        public DbSet<Customer> Customers { get; set; }
+
+        public DbSet<Sale> Sales { get; set; }
+
+        public DbSet<User> Users { get; set; }
+
+        public DbSet<Login> Logins { get; set; }
+
+        public DbSet<Log> Logs { get; set; }
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Car>().HasMany<Part>(car => car.Parts).WithMany(part => part.Cars);
+            modelBuilder.Entity<Supplier>().HasMany<Part>(supplier => supplier.Parts).WithRequired(part => part.Supplier).WillCascadeOnDelete(true);
+        }
+    }
+}
