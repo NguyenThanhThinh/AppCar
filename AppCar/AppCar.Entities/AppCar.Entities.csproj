@@ -49,6 +49,13 @@
     <Compile Include="EntityModel\Supplier.cs" />
     <Compile Include="EntityModel\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModel\AboutCarVm.cs" />
+    <Compile Include="ViewModel\AboutCustomerVm.cs" />
+    <Compile Include="ViewModel\AllCustomerVm.cs" />
+    <Compile Include="ViewModel\CarVm.cs" />
+    <Compile Include="ViewModel\PartVm.cs" />
+    <Compile Include="ViewModel\SaleVm.cs" />
+    <Compile Include="ViewModel\SupplierVm.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
