@@ -48,9 +48,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppCarDbContext.cs" />
-    <Compile Include="Migrations\201705101703160_add.cs" />
-    <Compile Include="Migrations\201705101703160_add.Designer.cs">
-      <DependentUpon>201705101703160_add.cs</DependentUpon>
+    <Compile Include="Migrations\201706020512007_Init.cs" />
+    <Compile Include="Migrations\201706020512007_Init.Designer.cs">
+      <DependentUpon>201706020512007_Init.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -66,8 +66,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201705101703160_add.resx">
-      <DependentUpon>201705101703160_add.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201706020512007_Init.resx">
+      <DependentUpon>201706020512007_Init.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

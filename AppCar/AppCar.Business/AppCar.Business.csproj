@@ -51,8 +51,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Business.cs" />
-    <Compile Include="CarBusiness.cs" />
+    <Compile Include="CarsBusiness.cs" />
+    <Compile Include="CustomersBusiness.cs" />
+    <Compile Include="LogsBusiness.cs" />
+    <Compile Include="PartsBusiness.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SalesBusiness.cs" />
+    <Compile Include="SuppliersBusiness.cs" />
+    <Compile Include="UsersBusiness.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AppCar.Data\AppCar.Data.csproj">
